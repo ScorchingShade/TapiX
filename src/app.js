@@ -11,7 +11,7 @@ require('dotenv').config();
 const app = express();
 
 //|| parses the port
-const port = process.env.PORT || 7767;
+const port = process.env.PORT || 8080;
 
 
 
