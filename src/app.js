@@ -21,7 +21,7 @@ app.use(express.json());
 const uri = process.env.ATLAS_URI;
 
 //connection establishment parser
-mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true });
+mongoose.connect("mongodb+srv://ankush:1234@cluster0.nmfdz.mongodb.net/stores?retryWrites=true&w=majority", { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true });
 
 const connection = mongoose.connection;
 connection.once('open', () => {
